@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SSSALTY-MineCraft Server</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .video-background {
+            background: #000;
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -99;
+        }
+        
+        .video-foreground,
+        .video-background iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        #vidtop-content {
+            top: 0;
+            color: #fff;
+        }
+        
+        .vid-info {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 33%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 1rem;
+            font-family: Avenir, Helvetica, sans-serif;
+        }
+        
+        .vid-info h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 0;
+            line-height: 1.2;
+        }
+        
+        .vid-info a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            background: rgba(1, 116, 247, 0.733);
+            transition: .6s background;
+            border-bottom: none;
+            margin: 1rem auto;
+            text-align: center;
+        }
+        
+        @media (min-aspect-ratio: 16/9) {
+            .video-foreground {
+                height: 300%;
+                top: -100%;
+            }
+        }
+        
+        @media (max-aspect-ratio: 16/9) {
+            .video-foreground {
+                width: 300%;
+                left: -100%;
+            }
+        }
+        
+        @media all and (max-width: 600px) {
+            .vid-info {
+                width: 50%;
+                padding: .5rem;
+            }
+            .vid-info h1 {
+                margin-bottom: .2rem;
+            }
+        }
+        
+        @media all and (max-width: 500px) {
+            .vid-info .acronym {
+                display: none;
+            }
+        }
+        
+        h1,
+        h2 {
+            font-weight: 400;
+            letter-spacing: -2px
+        }
+        
+        .card {
+            position: relative;
+            margin: 0 auto;
+            padding: 0;
+            width: 200px;
+            min-width: 300px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.3);
+            -webkit-animation: fadein 2s;
+            animation: fadein 2s;
+            overflow: hidden;
+            z-index: 999;
+        }
+        
+        .header {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 180px;
+            box-shadow: 0 4px 3px #0002;
+            overflow: hidden;
+        }
+        
+        .card img {
+            width: 100%;
+            transition: all 1s ease;
+            z-index: 0
+        }
+        
+        .image {
+            width: 100%;
+            height: 180px;
+            cursor: crosshair;
+            overflow: hidden;
+        }
+        
+        .image:hover img {
+            -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+        }
+        
+        .header h2 {
+            position: absolute;
+            bottom: 0;
+            margin: 0;
+            width: 100%;
+            padding: 0 10px;
+            color: #fff;
+            text-transform: uppercase;
+            pointer-events: none;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+        }
+        
+        .icon {
+            position: absolute;
+            background: #fff;
+            right: 10px;
+            top: 135px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #fff;
+            box-shadow: 0 4px 3px #0002;
+            z-index: 9
+        }
+        
+        #rest {
+            padding: 30px 15px;
+            line-height: 30px;
+            color: #000d42
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-background">
+        <div class="video-foreground">
+            <iframe src="https://www.youtube.com/embed/zD42t1MqEjE?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div id="vidtop-content">
+        <div class="vid-info">
+            <center>
+                <td>
+                    <span class="minecraft"><span style="color: #AA0000">S</span><span style="color: #FF5555">S</span><span style="color: #FFAA00">S</span><span style="color: #FFFF55">A</span><span style="color: #55FF55">L</span><span style="color: #00AA00">T</span>
+                    <span style="color: #55FFFF">Y </span><span style="color: #00AA00">M</span><span style="color: #FFFF55">I</span><span style="color: #FFFFFF">N</span><span style="color: #00AA00">E</span><span style="color: #55FF55">C</span><span style="color: #AA00AA">R</span>
+                    <span style="color: #FFFF55">A</span><span style="color: #AAAAAA">F</span><span style="color: #FFFFFF">T </span><span style="color: #FF5555">S</span><span style="color: #FFAA00">E</span><span style="color: #FFFF55">R</span><span style="color: #55FF55">V</span>
+                    <span style="color: #00AA00">E</span><span style="color: #00AAAA">R</span></span>
+                    <br>
+                    <BR>
+                    <p>SSSALTY is the largest Minecraft server in existence. Containing multiple arenas and zones for a hefty number of game types, SSSALTY is populated by thousands of players at any time</p>
+                    <P>SSSALTY feels like a studio-built MMO, with its impressive detail making it one of the best Minecraft servers. The ever-present community of staff and players are both great sports and ensure that there are always people with which
+                        to play. You can make SSSALTY your sole destination and still take part in two thirds of the experiences on this list.</P>
+                    <P>SSSALTY is also a great destination to play Minekart, a blocky recreation of Mario Kart. With recreated tracks, power-ups, and karting without actual karts, Minekart is a refreshing change from the other typically violent, or pickaxe-heavy,
+                        game types.</P>
+            </center>
+            <div class="card">
+                <div class="icon"><img src="https://2.bp.blogspot.com/-JC4x649XGXc/XxfQlMfkKLI/AAAAAAAAJqY/BAaBzBDjnqQ-SwugSCXvwI0Uz-CHem45ACLcBGAsYHQ/s320/server-icon.png" id="favicon"></div>
+                <div class="header">
+                    <div class="image"> <img src="https://2.bp.blogspot.com/-JC4x649XGXc/XxfQlMfkKLI/AAAAAAAAJqY/BAaBzBDjnqQ-SwugSCXvwI0Uz-CHem45ACLcBGAsYHQ/s320/server-icon.png" alt="" /> </div>
+
+                    <h2>SERVER STATUS</h2>
+                </div>
+                <div id="rest">Loading ...</div>
+            </div>
+            <script>
+                var url = "https://api.minetools.eu/ping/play.sssalty.ml/25565";
+
+                $.getJSON(url, function(r) {
+                    //data is the JSON string
+                    if (r.error) {
+                        $('#rest').html('Server Offline');
+                        return false;
+                    }
+                    var pl = '';
+                    if (r.players.sample.length > 0) {
+                        pl = '<br>OP: ' + r.players.sample[0].name;
+                    }
+                    $('#rest').html(r.description.replace(/§(.+?)/gi, '') + '<br><b>Players Online:</b> ' + r.players.online + pl);
+                    $('#favicon').attr('src', r.favicon);
+
+                });
+            </script>
+            <a href="https://www.youtube.com/channel/UC_LYN9N0iun2wOUsIJcx-Qw">Subscribe Now</a>
+            <a href="https://discord.io/SSSALTYLIVE">Discord</a>
+        </div>
+    </div>
+</body>
+
+</html>
